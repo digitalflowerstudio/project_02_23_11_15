@@ -230,11 +230,11 @@ header h2 {
 
 .what-more article {
     align-self: flex-end;
-    max-width: 40%;
     margin-right: 7vw;
     font-size: 2rem;
     color: var(--color-grey-light);
     line-height: 3.5rem;
+    margin-left: 40vw;
 }
 
 .what-more a {
@@ -247,4 +247,63 @@ header h2 {
 .what-more a:hover {
     text-decoration: underline;
     transition-delay: 0.1s;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    text-align: center;
+    font-size: 8rem;
+    font-family: 'Didact_Gothic';
+    line-height: 15rem;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.socials a {
+    color: var(--color-black);
+}
+
+.socials a:hover {
+    text-decoration: underline;
+    transition-delay: 0.1s;
+}
+
+#heart {
+    position: relative;
+    animation: heartbeat 3s infinite;
+    margin: 0 auto;
+    font-size: 5rem;
+}
+
+
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(.75);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(.75);
+    }
+
+    60% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(.75);
+    }
+
+    100% {
+        transform: scale(.75);
+    }
 }
