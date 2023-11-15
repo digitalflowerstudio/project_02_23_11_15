@@ -42,10 +42,59 @@ html {
 .infobox {
     display: flex;
     flex-direction: column;
+    margin-left: 10vw;
+    margin-top: 15vh;
 }
 
 h3 {
+    font-family: 'Didact_Gothic';
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 250;
+    margin: 2vh 0;
+}
 
+.infobox__date {
+    font-family: 'Work_Sans';
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.infobox__date::before {
+    display: inline-block;
+    content: '';
+    border-top: 0.1rem solid var(--color-grey-light);
+    width: 1rem;
+    margin-right: 0.4rem;
+    transform: translateY(-0.2rem);
+}
+
+.infobox__p {
+    font-family: 'Work_Sans';
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+.color__grey-light {
+    color: var(--color-grey-light);
+}
+
+button {
+    font-family: 'Fjalla_One';
+    padding: 0.6rem 1.1rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: 200;
+    margin-top: 8vh;
+}
+
+.big-number {
+    font-family: 'Fjalla_One';
+    font-size: 8rem;
+    opacity: 0.5;
+    align-self: flex-end;
+    margin-right: 6vw;
+    margin-bottom: 8vh;
 }
 
 /* Styling Header mit flex-direction */
@@ -93,4 +142,13 @@ header h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+}
+
+.orbis h3 {
+    color: var(--color-white);
+}
+
+.orbis button {
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
 }
