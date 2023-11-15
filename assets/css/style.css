@@ -36,14 +36,10 @@ html {
 
 .portfolio {
     display: flex;
-    justify-content: space-between;
-}
-
-.infobox {
-    display: flex;
     flex-direction: column;
-    margin-left: 10vw;
-    margin-top: 15vh;
+    padding-left: 10vw;
+    padding-top: 15vh;
+    height: 100vh;
 }
 
 h3 {
@@ -79,22 +75,54 @@ h3 {
     color: var(--color-grey-light);
 }
 
+.color__grey-dark {
+    color: var(--color-grey-dark);
+}
+
+.button-effect {
+    display: flex;
+    justify-content: space-between;
+    height: 55vh;
+    align-items: flex-end;
+}
+
 button {
     font-family: 'Fjalla_One';
+    align-self: flex-start;
+    margin-top: 10vh;
     padding: 0.6rem 1.1rem;
     background-color: transparent;
     text-transform: uppercase;
     font-weight: 200;
-    margin-top: 8vh;
 }
 
 .big-number {
     font-family: 'Fjalla_One';
     font-size: 8rem;
     opacity: 0.5;
-    align-self: flex-end;
-    margin-right: 6vw;
-    margin-bottom: 8vh;
+    margin-right: 8vw;
+}
+
+.hover-white:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    transition-delay: 0.1s;
+}
+
+.hover-black:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    transition-delay: 0.1s;
+}
+
+.hover-white:hover ~ .number {
+    color: var(--color-white);
+    opacity: 1;
+}
+
+.hover-black:hover ~ .number {
+    color: var(--color-black);
+    opacity: 1;
 }
 
 /* Styling Header mit flex-direction */
@@ -106,37 +134,40 @@ header {
 }
 
 header img {
-    width: 25%;
-    height: 35%;
+    width: 40%;
+    height: auto;
 }
 
 header p {
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-family: 'Work_Sans';
     font-weight: 300;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-family: 'Didact_Gothic';
     text-transform: uppercase;
     text-align: center;
-    max-width: 10rem;
-    line-height: 3rem;
+    max-width: 30rem;
+    line-height: 5rem;
     font-weight: 200;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 header h2 {
-    font-size: 3rem;
+    font-size: 8rem;
     font-family: 'Work_Sans';
     text-transform: uppercase;
     font-weight: 400;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 
 /* First Section */
 
 .orbis {
-    height: 100vh;
     background-image: url(../img/portfolio2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -151,4 +182,17 @@ header h2 {
 .orbis button {
     border: 1px solid var(--color-white);
     color: var(--color-white);
+}
+
+.rollr {
+    background-image: url(../img/portfolio3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.rollr button {
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
 }
