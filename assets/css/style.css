@@ -231,15 +231,15 @@ header h2 {
 .what-more article {
     align-self: flex-end;
     margin-right: 7vw;
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--color-grey-light);
-    line-height: 3.5rem;
+    line-height: 2rem;
     margin-left: 40vw;
 }
 
 .what-more a {
     color: var(--color-white);
-    font-size: 5rem;
+    font-size: 3rem;
     margin-top: 3vh;
     display: inline-block;
 }
